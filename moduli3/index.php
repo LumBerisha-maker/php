@@ -61,8 +61,8 @@ foreach($cars as $car){
 
 $age = array("Lumi =>13","Jora =>13","Sufjan =>15");
 
-foreach($age as $ague){
-    echo "$age <hr>";
+foreach($age as $x => $value){
+    echo "$x = $value <hr>";
 }
 
 
