@@ -31,29 +31,39 @@
 
 //    }
 
-$numri = 0;
-while ($numri <=5){
-    echo "the nummber is $numri <hr>";
-    $numri++;
+// $numri = 0;
+// while ($numri <=5){
+//     echo "the nummber is $numri <hr>";
+//     $numri++;
+// }
+
+
+// $numri = 0;
+// do{
+// echo "the nummber is $numri <hr>";
+//     $numri++;
+
+// }while ($numri <=5);
+
+
+// for($x=0; $x<=10; $x++){
+//     echo "the nummber is $x <hr>";
+// }
+
+
+
+
+$cars = array("Opel","Bmw","Mcd");
+
+foreach($cars as $car){
+    echo "$car <hr>";
 }
 
+$age = array("Lumi =>13","Jora =>13","Sufjan =>15");
 
-$numri = 0;
-do{
-echo "the nummber is $numri <hr>";
-    $numri++;
-
-}while ($numri <=5);
-
-
-for($x=0; $x<=10; $x++){
-    echo "the nummber is $x <hr>";
+foreach($age as $ague){
+    echo "$age <hr>";
 }
-
-
-
-
-
 
 
 
