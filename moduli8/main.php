@@ -15,10 +15,16 @@ $conn = new PDO("mysql:host=$host; dbname=$db", $user, $password);
 $sql = "CREATE TABLE users(
        id INT(6) NOT NULL AUTO_INCREMENT PRIMARY KEY,
        username VARCHAR(30) NOT NULL,
-       password VARCHAR(30) NOT NULL
-    
-
-     )";
+       password VARCHAR(30) NOT NULL )
+       
+       
+       INSERT INFO users(usernames, password)VALUES
+        ("lumi","676767")
+       
+       
+       
+       
+       ";
 
 
 
