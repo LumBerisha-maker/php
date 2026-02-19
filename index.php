@@ -37,7 +37,7 @@
 // $thestring= "Programming";
 // echo str_strevv("string7");
 
-
+h
 
 
 
