@@ -13,5 +13,6 @@ $deleteUsers->bindParam(':id', $id);
 
 $deleteUsers -> execute();
 
+header('Location:dashboard.php');
 
 ?>

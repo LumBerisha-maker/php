@@ -35,11 +35,22 @@ $users = $getUsers->fetchAll();
          background-color: green;
          }
 
+        th{
+          background-color: green;
+        }
 
+   form>input{
 
+     margin: 10px;
+       font-size: 20px;
+       padding:5px;
+   }
 
-
-
+     button{
+          border: 1px solid black;
+          padding: 10px 30px;
+          font-size: 20px;
+     }
 
       </style>
 </head>
@@ -58,11 +69,24 @@ $users = $getUsers->fetchAll();
      <td><?php echo $user ['id']?></td>
      <td><?php echo $user ['username']?></td>
     <td><?php echo $user ['password']?></td>
-   <td> <?php "<a href='delete.php?id=$user[id]'Delete</a>" ?></td>
+   <td> <?= "<a href='delete.php?id=$user[id]'>Delete</a>" ?></td>
 </tr> 
      <?php } ?>
      
      </table>
+
+       <form>
+     <input type="hidden" name="id" value="<?php echo users[$id] ?>"><br>
+     <input type="hidden" name="username" value="<?php echo users[$username] ?>"><br>
+     <input type="hidden" name="password" value="<?php echo users[$password] ?>"><br>
+     
+    <button type="submit">Update</button>
+
+
+</form>
+
+
+
 
 
 </body>
